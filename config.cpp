@@ -23,7 +23,7 @@ class CfgVehicles
 		rotationFlags=17;
 		weight=980;
 		itemSize[]={3,4};
-		itemsCargoSize[]={1,1};
+		itemsCargoSize[]={0,0};
 		canBeDigged=1;
 		isMeleeWeapon=1;
 		allowOwnedCargoManipulation=1;
@@ -38,97 +38,9 @@ class CfgVehicles
 			"pistolOptics",
 			"weaponOpticsMosin",
 			"weaponOpticsAK",
-			"weaponOpticsLRS",
+			//"weaponOpticsLRS",
 			"weaponOpticsHunting",
 			"weaponOpticsCrossbow"
-		};
-		class DamageSystem
-		{
-			class GlobalHealth
-			{
-				class Health
-				{
-					hitpoints=750;
-					healthLevels[]=
-					{
-						
-						{
-							1,
-							
-							{
-								"DZ\gear\containers\data\Protector_Case.rvmat"
-							}
-						},
-						
-						{
-							0.69999999,
-							
-							{
-								"DZ\gear\containers\data\Protector_Case.rvmat"
-							}
-						},
-						
-						{
-							0.5,
-							
-							{
-								"DZ\gear\containers\data\Protector_Case_damage.rvmat"
-							}
-						},
-						
-						{
-							0.30000001,
-							
-							{
-								"DZ\gear\containers\data\Protector_Case_damage.rvmat"
-							}
-						},
-						
-						{
-							0,
-							
-							{
-								"DZ\gear\containers\data\Protector_Case_destruct.rvmat"
-							}
-						}
-					};
-				};
-			};
-			class GlobalArmor
-			{
-				class FragGrenade
-				{
-					class Health
-					{
-						damage=8;
-					};
-					class Blood
-					{
-						damage=8;
-					};
-					class Shock
-					{
-						damage=8;
-					};
-				};
-			};
-		};
-		soundImpactType="plastic";
-		class AnimEvents
-		{
-			class SoundWeapon
-			{
-				class pickUpItem
-				{
-					soundSet="smallprotectorcase_pickup_SoundSet";
-					id=797;
-				};
-				class drop
-				{
-					soundset="smallprotectorcase_drop_SoundSet";
-					id=898;
-				};
-			};
 		};
 	};
 };
