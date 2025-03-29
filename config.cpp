@@ -38,7 +38,6 @@ class CfgVehicles
 			"pistolOptics",
 			"weaponOpticsMosin",
 			"weaponOpticsAK",
-			//"weaponOpticsLRS",
 			"weaponOpticsHunting",
 			"weaponOpticsCrossbow"
 		};
